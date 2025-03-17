@@ -11,8 +11,8 @@
     }
 
     public bool IsDefault { get; }
-    public string Guid => _measure.Guid;
-    public string Name => _measure.Name;
-    public NamedEntityCollection<LMeasureUnit> Units => _measure.Units;
+    public string Guid => _measure?.Guid;
+    public string Name => _measure?.Name;
+    public NamedEntityCollection<LMeasureUnit> Units => _measure?.Units;
   }
 }
